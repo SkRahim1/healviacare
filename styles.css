@@ -272,10 +272,16 @@ header.scrolled {
   display: flex;
   align-items: center;
   font-family: var(--font-heading);
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 800;
   color: var(--primary);
   gap: 8px;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    font-size: 1.5rem;
+  }
 }
 
 .logo span {
@@ -461,10 +467,11 @@ header.scrolled {
 }
 
 .hero-title {
-  font-size: clamp(2.2rem, 6vw, 3.8rem);
+  font-size: clamp(1.7rem, 5vw, 3.2rem);
   font-weight: 900;
   color: var(--primary-dark);
   letter-spacing: -0.02em;
+  line-height: 1.15;
 }
 
 .hero-title span {
@@ -474,9 +481,17 @@ header.scrolled {
 }
 
 .hero-text {
-  font-size: 1.1rem;
+  font-size: 0.95rem;
   color: var(--dark-light);
   max-width: 520px;
+  line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+  .hero-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
 }
 
 .hero-stats {
